@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DietPal</title>
+
+    <!-- magnific-popup css cdn link  -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">-->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color: rgb(66, 195, 195);">
+<div class="gallery">
+
+   
+
+    <div class="image-container">
+
+       
+        <a href="np.html" class="image">
+            <img src="indeximg/protein.jpg" alt="protein">
+            <div class="texti">PROTEIN</div>
+        </a>
+        <a href="nc.html" class="image">
+            <img src="indeximg/carbs.jpg" alt="carbs">
+            <div class="texti">CARBS</div>
+        </a>
+
+        <a href="nf.html" class="image">
+            <img src="indeximg/fats.jpg" alt="fats">
+            <div class="texti">FATS</div>
+        </a>
+        <a href="fn.html" class="image">
+            <img src="indeximg/fibre.jpg" alt="fibre">
+            <div class="texti">FIBRES</div>
+        </a>
+
+        <a href="nv.html" class="image">
+            <img src="indeximg/vege.jpg" alt="vege">
+            <div class="texti">VEGETABLES</div>
+        </a>
+        <a href="nfr.html" class="image">
+            <img src="indeximg/fruit.jpg" alt="fruits">
+            <div class="texti">FRUITS</div>
+        </a>
+        <a href="cal.html" class="image">
+            <img src="indeximg/calories.jpg" alt="calories">
+            <div class="texti">CALORIES</div>
+        </a>
+        <a href="gain.html" class="image">
+            <img src="indeximg/weight.jpg" alt="gain">
+            <div class="texti">GAIN WEIGHT</div>
+        </a>
+        <a href="lose.html" class="image">
+            <img src="indeximg/weight.jpg" alt="lose">
+            <div class="texti">LOSE WEIGHT</div>
+        </a>
+    </div>
+
+</div>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.image').show(400);
+        }else{
+            $('.image').not('.'+filter).hide(200);
+            $('.image').filter('.'+filter).show(400);
+        }
+
+    });
+
+    $('.gallery').magnificPopup({
+
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+});
+
+</script>
+    
+</body>
+</html>

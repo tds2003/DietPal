@@ -1,0 +1,54 @@
+tr, td {
+    border: 5px solid black;
+    text-align: center;
+    color: rgb(26, 24, 24);
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    font-size: larger;
+    font-weight: bolder;
+}
+tr:hover { background-color: aqua;}
+th{
+    border: 5px solid black;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    color: rgb(26, 24, 24);
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #04AA6D;
+
+}
+h1{
+    font-size: 70px;
+    text-align:center ;
+    color: black;
+}
+
+button{
+    justify-content: center; 
+    text-align: center; 
+    margin-left: 45%; 
+    margin-right: 50%; 
+    background-color:greenyellow; 
+    box-shadow: 4px 4px black;   
+    font-size: 30px;
+    margin-bottom: 500px;
+}
+body{
+    background-image: url('indeximg/templl.jpg');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+table{
+    display: block; 
+    border-collapse: collapse; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: white;
+}

@@ -1,0 +1,25 @@
+
+
+h1{
+    font-size: 70px;
+    text-align:center ;
+    color: white;
+}
+
+button{
+    justify-content: center; 
+    text-align: center; 
+    margin-left: 45%; 
+    margin-right: 50%; 
+    background-color:greenyellow; 
+    box-shadow: 4px 4px black;   
+    font-size: 30px;
+    margin-bottom: 500px;
+}
+body{
+    background-image: url('indeximg/templ.jpg');
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
